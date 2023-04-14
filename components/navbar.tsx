@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavTop from "./navtop";
 
 export default function NavBar() {
@@ -62,10 +63,10 @@ export default function NavBar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 ">
             <li>
-              <a>Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a>About Us</a>
+              <Link href="/about">About Us</Link>
             </li>
             <li tabIndex={0}>
               <a>
@@ -91,7 +92,7 @@ export default function NavBar() {
                       className="dropdown-content menu p-2 bg-slate-800"
                     >
                       <li>
-                        <a className="hover:bg-primary">Book Keeping Service</a>
+                        <Link href="/sec" className="hover:bg-primary">Book Keeping Service</Link>
                       </li>
                       <li>
                         <a className="hover:bg-primary">Accounts Payble Service</a>
@@ -112,19 +113,19 @@ export default function NavBar() {
                   </div>
                 </li>
                 <li>
-                  <a className="hover:bg-primary">SEC Filings & Reporting</a>
+                  <Link href="/sec" className="hover:bg-primary">SEC Filings & Reporting</Link>
                 </li>
                 <li>
-                  <a className="hover:bg-primary">Statutory Compliance Reports</a>
+                  <Link href="/scr"className="hover:bg-primary">Statutory Compliance Reports</Link>
                 </li>
                 <li>
-                  <a className="hover:bg-primary">Mutual Funds Reporting</a>
+                  <Link href="/mfr" className="hover:bg-primary">Mutual Funds Reporting</Link>
                 </li>
                 <li>
-                  <a className="hover:bg-primary">SEDAR Reporting</a>
+                  <Link href="/sr" className="hover:bg-primary">SEDAR Reporting</Link>
                 </li>
                 <li>
-                  <a className="hover:bg-primary">HMRC Reporting</a>
+                  <Link href="/hmrcr" className="hover:bg-primary">HMRC Reporting</Link>
                 </li>
               </ul>
             </li>
@@ -132,7 +133,7 @@ export default function NavBar() {
               <a>Resources</a>
             </li>
             <li>
-              <a>Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>

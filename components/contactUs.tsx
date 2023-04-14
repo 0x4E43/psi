@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import ConImage from "../public/assets/contact.jpg";
 
-export default function Contact() {
+export default function ContactUs() {
   return (
     <>
       <div className="flex w-full min-h-screen justify-center items-center bg-slate-200">
